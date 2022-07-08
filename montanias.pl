@@ -1,8 +1,59 @@
 tieneRefugio(catedral,frei,2012).
 tieneRefugio(lopez,refugioLopez,1983).
+
 tieneRefugio(tronador,ottoMeiling,2520).
 tieneRefugio(tronador,lasNubes,2900).
+tieneRefugio(tronador,pampaLinda,1000).
+tieneRefugio(tronador,limiteConChile,3000).
 
+tramo(ottoMeiling,lasNubes,5).
+tramo(pampaLinda,ottoMeiling,10).
+tramo(pampaLinda,lasNubes,12).
+tramo(lasNubes,limiteConChile,1).
+tramo(frei,ottoMeiling,7).
+
+existeCamino(Salida,Llegada):-
+    tramo(Salida,Llegada,_).  
+    
+existeCamino(Salida,Llegada):-
+    tramo(UnLugar,Llegada,_),
+    existeCamino(Salida,UnLugar).
+    
+tiempoRecorrido(Salida,Llegada,Tiempo):-
+    tramo(Salida,Llegada,Tiempo).  
+    
+tiempoRecorrido(Salida,Llegada,TiempoTotal):-
+    tramo(UnLugar,Llegada,Tiempo),
+    tiempoRecorrido(Salida,UnLugar,TiempoParcial),
+    TiempoTotal is TiempoParcial + Tiempo.
+
+
+
+recorrido(Salida,Llegada,[Salida,Llegada]):-
+    tramo(Salida,Llegada,_).  
+
+/*
+recorrido(Salida,Llegada,OtraLista):-
+    tramo(UnLugar,Llegada,_),
+    recorrido(Salida,UnLugar,RecorridoParcial),
+    agregaAlFinal(RecorridoParcial,Llegada,OtraLista).
+
+agregaAlFinal(Lista,Elemento,NuevaLista):-
+    append(Lista,[Elemento],NuevaLista).
+*/
+recorrido(Salida, Llegada, [Salida| RecorridoParcial]):-
+    tramo(Salida, Intermedio,_),
+    recorrido(Intermedio, Llegada, RecorridoParcial).
+
+/*
+    existeCamino(Lugar,Nuevo):-
+        existeCamino(Lugar,OtroLugar),
+        tramo(OtroLugar,Nuevo,_).
+    existeCamino(Salida,Llegada):-
+        tramo(Salida,Intermedio,_),
+        existeCamino(Intermedio,Llegada).  
+
+*/
 
 alturaPromedio(AlturaPromedio):-
     findall( Altura,  tieneRefugio(_,_,Altura),   Alturas),
