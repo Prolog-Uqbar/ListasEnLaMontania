@@ -12,10 +12,6 @@ quierenIr(lopez,[juan,carlos]).
 quierenIr(lopez,[srPerez,sraGarcia,pequenioPereGarcia,pequeniaPerezGarcia]).
 quierenIr(catedral,[ana,sofia,juelita]).
 
-%quiereIr(tronador,juan).
-%quiereIr(tronador,pedro).
-%quiereIr(tronador,ana).
-%quiereIr(tronador,sofia).
 
 quiereIr(Montania,Persona):-
     quierenIr(Montania,Grupo),
