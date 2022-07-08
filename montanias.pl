@@ -31,4 +31,10 @@ cuantosQuierenIrJuntos(Montania,Cantidad):-
 %2) puedeLlegar(Fulano,Refugio)  
 %% kilos que lleva * 50 menor a la altura
 
+%3) quien es el que lleva mas cosas?
+
+%4) montaniaRepetida(Montania) si
+% si existe algun grupo que vaya a esa montania y que en otro momento, todos sus integrantes vuelvan a ir juntos en otra excursion al a misma montania
+
+
 
