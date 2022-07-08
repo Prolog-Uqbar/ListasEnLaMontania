@@ -1,5 +1,7 @@
-# ListasEnLaMontania
+# Listas En La Montania
 Ejemplo con listas y recursividad
+
+![](montania.jpg)
 
 Nos fuimos de mochileros a Bariloche y vamos a recorrer las montañas. 
 Tenemos información de qué refugios hay en cada montania y a qué altura sobre el nivel del mar
