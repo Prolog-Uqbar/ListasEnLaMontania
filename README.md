@@ -63,7 +63,8 @@ A partir de esta información se quiere averiguar:
 * Averiguar el tiempo que lleva ascender desde un refugio a otro, considerando que apenas llegan a un refugio parten hacia otro. Si hay más de un camino posible, deben informarse todos los tiempos.
 * **Difícil** Obtener el conjunto de refugios por los que pasa cada posible camino desde un refugio a otro.
 
-**Otros**
+**Desafío extra:**
+
 Saber si un camino es agradable, lo cual depende de que todos los tramos que lo componen tengan una relación razonable entre la diferencia de altura y en tiempo que lleva recorrerlo. (entre 50 y 120 metros de desnivel por hora). En cambio, si alguno de los tramos tiene una relación mayor a 120 el camino se considera exigente. A los demás caminos se los califica como básicos.
 
 
