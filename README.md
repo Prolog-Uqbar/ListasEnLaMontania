@@ -39,3 +39,32 @@ Se quiere averiguar:
 * Averiguar quien es el que lleva más cosas.
 * **Difícil**: `montaniaRepetida(Montania)` Se considera repetida una montaña si existe algun grupo que vaya a esa montaña y que en otro momento, todos sus integrantes vuelvan a ir juntos en otra excursion al a misma montaña
 
+### Recorridos en la montaña
+
+Se cuenta con información de más cantidad de refugios ubicados en las diferentes montañas. Existen senderos que unen a los refugios, para cada uno de ellos se indica el refugio de salida y el de llegada y el tiempo que lleva recorrerlo. 
+
+Por ejemplo:
+
+```
+tieneRefugio(tronador,lasNubes,2900).
+tieneRefugio(tronador,pampaLinda,1000).
+tieneRefugio(tronador,limiteConChile,3000).
+
+tramo(ottoMeiling,lasNubes,5).
+tramo(pampaLinda,ottoMeiling,10).
+tramo(pampaLinda,lasNubes,12).
+tramo(lasNubes,limiteConChile,1).
+tramo(frei,ottoMeiling,7).
+```
+
+A partir de esta información se quiere averiguar:
+
+* Si es posible ascender desde un refugio a otro, en uno o más tramos. 
+* Averiguar el tiempo que lleva ascender desde un refugio a otro, considerando que apenas llegan a un refugio parten hacia otro. Si hay más de un camino posible, deben informarse todos los tiempos.
+* **Difícil** Obtener el conjunto de refugios por los que pasa cada posible camino desde un refugio a otro.
+
+**Otros**
+Saber si un camino es agradable, lo cual depende de que todos los tramos que lo componen tengan una relación razonable entre la diferencia de altura y en tiempo que lleva recorrerlo. (entre 50 y 120 metros de desnivel por hora). En cambio, si alguno de los tramos tiene una relación mayor a 120 el camino se considera exigente. A los demás caminos se los califica como básicos.
+
+
+
