@@ -37,7 +37,7 @@ Se quiere averiguar:
 * `companieroDeExcursionAMasDeUnaMontania(Fulano,Mengano)` Relaciona dos personas si están juntas en un grupo, en dos excursiones a montanias diferentes.
 * `puedeLlegar(Fulano,Refugio)` Indica si una persona puede llegar a subir a un refugio, teniendo en cuenta el peso de su equipaje y la altura del refugio. Se sabe que dicha altura no debe ser mayor a 50 veces el peso total de su equipaje.   
 * Averiguar quien es el que lleva más cosas.
-* **Difícil**: `montaniaRepetida(Montania)` Se considera repetida una montaña si existe algun grupo que vaya a esa montaña y que en otro momento, todos sus integrantes vuelvan a ir juntos en otra excursion al a misma montaña
+* **Difícil:** `montaniaRepetida(Montania)` Se considera repetida una montaña si existe algun grupo que vaya a esa montaña y que en otro momento, todos sus integrantes vuelvan a ir juntos en otra excursion al a misma montaña
 
 ### Recorridos en la montaña
 
@@ -61,7 +61,7 @@ A partir de esta información se quiere averiguar:
 
 * Si es posible ascender desde un refugio a otro, en uno o más tramos. 
 * Averiguar el tiempo que lleva ascender desde un refugio a otro, considerando que apenas llegan a un refugio parten hacia otro. Si hay más de un camino posible, deben informarse todos los tiempos.
-* **Difícil** Obtener el conjunto de refugios por los que pasa cada posible camino desde un refugio a otro.
+* **Difícil:** Obtener el conjunto de refugios por los que pasa cada posible camino desde un refugio a otro.
 
 **Desafío extra:**
 
